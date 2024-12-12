@@ -1,29 +1,37 @@
 body {
-    display: grid;
-    grid-template-columns: .3fr 1fr;
-    gap: 5em;
-    color: black;
-    font-family: Times;
-    font-style: normal;
-    font-size: 12px;
-    background-color: #dddddd;
-    margin: 3em;
+  color-scheme: light dark; /* Enabling light mode and dark mode */
+  color: light-dark(#333, #fff); /* Text light and dark colors */
+  background-color: light-dark(
+    #fff,
+    #222
+  ); /* Background light and dark colors*/
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  gap: 5em;
+  font-family: Times;
+  font-style: normal;
+  font-size: 12px;
+  margin: 3em;
 }
 body-wrapper {
-    max-width: 500px;
+  max-width: 500px;
 }
 header-text {
-    display: block;
+  display: block;
+  text-align: justify;
 }
 
 h2 {
-    font-size: 12px;
-    font-weight: normal;
-    text-decoration: underline;
-    margin: 0;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: underline;
+  margin: 0;
 }
-.gallery-img  {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid black;
+.gallery-img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+#bowen {
+    fill: light-dark(#333, #fff);
 }
