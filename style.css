@@ -1,0 +1,29 @@
+body {
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    gap: 5em;
+    color: black;
+    font-family: Times;
+    font-style: normal;
+    font-size: 12px;
+    background-color: #dddddd;
+    margin: 3em;
+}
+body-wrapper {
+    max-width: 500px;
+}
+header-text {
+    display: block;
+}
+
+h2 {
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: underline;
+    margin: 0;
+}
+.gallery-img  {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
