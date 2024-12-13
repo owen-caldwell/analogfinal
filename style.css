@@ -1,31 +1,31 @@
 body {
+    display: flex;
+    flex-direction: column;
   color-scheme: light dark; /* Enabling light mode and dark mode */
   color: light-dark(#333, #fff); /* Text light and dark colors */
   background-color: light-dark(
     #fff,
     #222
   ); /* Background light and dark colors*/
-  display: grid;
-  grid-template-columns: 0.3fr 1fr;
-  gap: 5em;
   font-family: Times;
   font-style: normal;
   font-size: 12px;
   margin: 3em;
+}
+header {
+    margin-bottom: 2em;
 }
 body-wrapper {
   max-width: 500px;
 }
 header-text {
   display: block;
-  text-align: justify;
 }
 
 h2 {
   font-size: 12px;
   font-weight: normal;
   text-decoration: underline;
-  margin: 0;
 }
 .gallery-img {
   max-width: 100%;
@@ -33,5 +33,17 @@ h2 {
   border: 1px solid black;
 }
 #bowen {
-    fill: light-dark(#333, #fff);
+  fill: light-dark(#333, #fff);
+}
+img-caption {
+    font-style: italic;
+}
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 5em;
+  }
+
+    
 }
